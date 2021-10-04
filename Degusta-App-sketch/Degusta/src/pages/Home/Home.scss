@@ -1,0 +1,153 @@
+$fontFamily: 'Work Sans', sans-serif;
+
+.container-home {
+  width: 100vw;
+  height: 100vh;
+
+  .header-home {
+    width: 100vw;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 7px 25px 0px rgba(#000 ,0.69); 
+    box-shadow: 0px 7px 25px 0px rgba(#000 ,0.69);
+
+    img {
+      max-height: 40px;
+
+      //// Descomente para um orgasmo de felicidade
+      // min-width: 100%;
+    }
+
+    .profile-home {
+      position: absolute;
+      right: 15px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        color: #ff8600;
+        font-size: 28px;
+      }
+    }
+  }
+
+  .body-home {
+    width: 100vw;
+    min-height: 100vh;
+    height: max-content;
+    margin-top: 46px;
+    background-color: #ff8600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    max-height: 100vh;
+    padding-bottom: 50px;
+
+    .search-container-home {
+      position: relative;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+
+      .search-home {
+        margin-top: 20px;
+        width: 80vw;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 15px;
+        border-style: none;
+        color: #777;
+        padding: 0 20px;
+        font-family: $fontFamily;
+        font-weight: 500;
+        -webkit-box-shadow: 0px 0px 10px -7px rgba(#000 ,0.69); 
+        box-shadow: 0px 0px 10px -7px rgba(#000 ,0.69);
+      }
+  
+      .search-icon-home {
+        margin-right: 15px;
+        margin-top: 20px;
+        padding-left: 10px;
+        position: absolute;
+        color: #777;
+        background-color: #fff;
+      }
+    }
+
+    .cards-home {
+      margin-top: 20px;
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+
+      .card-home {
+        margin-bottom: 30px;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 13px;
+        -webkit-box-shadow: 0px 7px 10px -7px rgba(#000 ,0.69); 
+        box-shadow: 0px 7px 10px -7px rgba(#000 ,0.69);
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        
+        .card-img-home {
+          min-height: 150px;
+          max-width: 50%;
+
+          img {
+            object-fit: cover;
+            border-radius: 13px 2px;
+            height: 100%;
+          }
+        }
+
+        .card-texts-home {
+          width: 50%;
+          padding-left: 10px;
+          font-family: $fontFamily;
+          text-align: justify;
+          color: #000;
+          
+          .card-title-home {
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+            color: #000;
+            max-width: 100%;
+            max-height: 20px;
+            overflow-x: auto;
+            overflow-y: hidden;
+            white-space: nowrap;
+          }
+
+          .card-summary-home {
+            text-align: center;
+            margin-top: 5px;
+            font-weight: 300;
+            max-width: 100%;
+            max-height: 130px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
